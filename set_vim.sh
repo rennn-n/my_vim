@@ -1,5 +1,5 @@
 #!/bin/sh
+CURRENT=$(cd $(dirname $0);pwd)
+ln -s $CURRENT/.vimrc $HOME/.vimrc
 
-ln -s ./.vimrc $HOME/.vimrc
-
-ln -s ./.vim $HOME/.vim
+ln -s $CURRENT/.vim $HOME/.vim
